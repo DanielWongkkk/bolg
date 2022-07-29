@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://danielwongkkk.github.io/bolg</id>
+    <title>Gridea</title>
+    <updated>2022-07-29T15:50:54.188Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://danielwongkkk.github.io/bolg"/>
+    <link rel="self" href="https://danielwongkkk.github.io/bolg/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://danielwongkkk.github.io/bolg/images/avatar.png</logo>
+    <icon>https://danielwongkkk.github.io/bolg/favicon.ico</icon>
+    <rights>All rights reserved 2022, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[windows docker 显示 docker filesharing问题]]></title>
+        <id>https://danielwongkkk.github.io/bolg/post/windows-docker-xian-shi-docker-filesharing-wen-ti/</id>
+        <link href="https://danielwongkkk.github.io/bolg/post/windows-docker-xian-shi-docker-filesharing-wen-ti/">
+        </link>
+        <updated>2022-07-29T15:39:19.000Z</updated>
+        <content type="html"><![CDATA[<p>使用windows docker时，出于安全考虑windows会限制docker能访问的文件路径，所以需要指定哪些路径下的文件docker能够访问</p>
+<p>点击 share it docker便能访问到该路径下的文件</p>
+<figure data-type="image" tabindex="1"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220728100818374.png" alt="image-20220728100818374" loading="lazy"></figure>
+<p>但每次运行程序都会生成一个新文件，每次运行docker时能到都要点击 share it 么？</p>
+<p>为了解决这个问题，就需要在 docker 里面设置windows的挂载路径，这样 docker 就能访问到该路径下的所有文件，而不用每次点击 share it</p>
+<figure data-type="image" tabindex="2"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220728101316119.png" alt="image-20220728101316119" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么写博客]]></title>
+        <id>https://danielwongkkk.github.io/bolg/post/wei-shi-me-xie-bo-ke/</id>
+        <link href="https://danielwongkkk.github.io/bolg/post/wei-shi-me-xie-bo-ke/">
+        </link>
+        <updated>2022-07-25T12:01:00.000Z</updated>
+        <content type="html"><![CDATA[<p>其实互联网时代，特别是作为程序员，遇到的大多数问题，早就有人遇到过了，并将其解决方法放到了网上</p>
+<p>很多问题，百度或者Google就能得到解决，而写博客，似乎也没什么必要，大家都是遇到差不多的问题，解决方法也差不多，博客大部分都同质化了</p>
+<p>所以博客还是得放一些个性化的问题及解决方案，那些普通而大众的问题，也没必要记录，随手一搜就能得到解决方案</p>
+<p>博客作为记录的载体，避免忘记，还是需要记录自己遇到的难解决的、百度不到的、个性化的问题，这也是我决定写博客的初衷</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://danielwongkkk.github.io/bolg/post/hello-gridea/</id>
+        <link href="https://danielwongkkk.github.io/bolg/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>windows docker 显示 docker filesharing问题 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://danielwongkkk.github.io/bolg/favicon.ico?v=1659109827961">
+<link rel="stylesheet" href="https://danielwongkkk.github.io/bolg/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="使用windows docker时，出于安全考虑windows会限制docker能访问的文件路径，所以需要指定哪些路径下的文件docker能够访问
+点击 share it docker便能访问到该路径下的文件
+
+但每次运行程序都会生成一个新..." />
+    <meta name="keywords" content="java,实习记录" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://danielwongkkk.github.io/bolg">
+        <img src="https://danielwongkkk.github.io/bolg/images/avatar.png?v=1659109827961" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/bolg" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/bolg/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/bolg/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/bolg/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://danielwongkkk.github.io/bolg/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">windows docker 显示 docker filesharing问题</h2>
+            <div class="post-date">2022-07-29</div>
+            
+            <div class="post-content" v-pre>
+              <p>使用windows docker时，出于安全考虑windows会限制docker能访问的文件路径，所以需要指定哪些路径下的文件docker能够访问</p>
+<p>点击 share it docker便能访问到该路径下的文件</p>
+<figure data-type="image" tabindex="1"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220728100818374.png" alt="image-20220728100818374" loading="lazy"></figure>
+<p>但每次运行程序都会生成一个新文件，每次运行docker时能到都要点击 share it 么？</p>
+<p>为了解决这个问题，就需要在 docker 里面设置windows的挂载路径，这样 docker 就能访问到该路径下的所有文件，而不用每次点击 share it</p>
+<figure data-type="image" tabindex="2"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220728101316119.png" alt="image-20220728101316119" loading="lazy"></figure>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://danielwongkkk.github.io/bolg/tag/java/" class="tag">
+                    java
+                  </a>
+                
+                  <a href="https://danielwongkkk.github.io/bolg/tag/practice/" class="tag">
+                    实习记录
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://danielwongkkk.github.io/bolg/post/wei-shi-me-xie-bo-ke/">
+                  <h3 class="post-title">
+                    为什么写博客
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
