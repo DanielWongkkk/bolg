@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>windows docker 显示 docker filesharing问题 | Gridea</title>
+<title>RNN 简述 | Gridea</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,11 +18,11 @@
 
 
 
-    <meta name="description" content="使用windows docker时，出于安全考虑windows会限制docker能访问的文件路径，所以需要指定哪些路径下的文件docker能够访问
-点击 share it docker便能访问到该路径下的文件
-
-但每次运行程序都会生成一个新..." />
-    <meta name="keywords" content="java,实习记录" />
+    <meta name="description" content="优势
+处理序列数据，这就非常适合处理文本、视频等信息
+卷积 CNN 的输入之间没什么联系，单个输入对应着单个输出
+但这并不足以应付更复杂的场景，比如视频信息，一句话，想要知道视频的含义或一句话的含义，单凭单个无连续的输入图片或单词，不足以推..." />
+    <meta name="keywords" content="深度学习" />
   </head>
   <body>
     <div id="app" class="main">
@@ -93,27 +93,45 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">windows docker 显示 docker filesharing问题</h2>
-            <div class="post-date">2022-07-29</div>
+            <h2 class="post-title">RNN 简述</h2>
+            <div class="post-date">2022-07-30</div>
             
             <div class="post-content" v-pre>
-              <p>使用windows docker时，出于安全考虑windows会限制docker能访问的文件路径，所以需要指定哪些路径下的文件docker能够访问</p>
-<p>点击 share it docker便能访问到该路径下的文件</p>
-<figure data-type="image" tabindex="1"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220728100818374.png" alt="image-20220728100818374" loading="lazy"></figure>
-<p>但每次运行程序都会生成一个新文件，每次运行docker时能到都要点击 share it 么？</p>
-<p>为了解决这个问题，就需要在 docker 里面设置windows的挂载路径，这样 docker 就能访问到该路径下的所有文件，而不用每次点击 share it</p>
-<figure data-type="image" tabindex="2"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220728101316119.png" alt="image-20220728101316119" loading="lazy"></figure>
+              <h4 id="优势">优势</h4>
+<p>处理序列数据，这就非常适合处理文本、视频等信息</p>
+<p>卷积 CNN 的输入之间没什么联系，单个输入对应着单个输出</p>
+<p>但这并不足以应付更复杂的场景，比如视频信息，一句话，想要知道视频的含义或一句话的含义，单凭单个无连续的输入图片或单词，不足以推断出语义信息。需要输入之间的序列信息，上下文信息</p>
+<h4 id="常见的序列数据">常见的序列数据</h4>
+<ul>
+<li>文本</li>
+<li>音视频</li>
+<li>房价走势</li>
+</ul>
+<p>所以想要处理文本、音视频、房价预测这样的工作时，就需要用到 RNN</p>
+<h4 id="传统神经网络与-rnn-的对比">传统神经网络与 RNN 的对比</h4>
+<figure data-type="image" tabindex="1"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220722160259516.png" alt="image-20220722160259516" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220722160353054.png" alt="image-20220722160353054" loading="lazy"></figure>
+<p>这样做的好处就是，最有一层会包含之间所有输入的信息</p>
+<h4 id="rnn-的缺点">RNN 的缺点</h4>
+<p>最近的输入占的比重大，而之前的输入占的比重小</p>
+<figure data-type="image" tabindex="3"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220722160601327.png" alt="image-20220722160601327" loading="lazy"></figure>
+<h4 id="rnn-的优化算法">RNN 的优化算法</h4>
+<p>由于 RNN 的缺点，出现了一系列的基于 RNN 的优化算法</p>
+<h5 id="lstm">LSTM</h5>
+<p>长短时记忆网络，LSTM 会保留长序列中的重要信息，忽略不重要的信息</p>
+<h5 id="gru">GRU</h5>
+<p>在 LSTM 上优化得来，在训练大数据集时，可以节省时间</p>
+<p>参考链接</p>
+<blockquote>
+<p><a href="https://easyai.tech/ai-definition/rnn/">一文看懂循环神经网络 RNN（2种优化算法+5个实际应用） (easyai.tech)</a></p>
+</blockquote>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://danielwongkkk.github.io/bolg/tag/java/" class="tag">
-                    java
-                  </a>
-                
-                  <a href="https://danielwongkkk.github.io/bolg/tag/practice/" class="tag">
-                    实习记录
+                  <a href="https://danielwongkkk.github.io/bolg/tag/deepLearn/" class="tag">
+                    深度学习
                   </a>
                 
               </div>
@@ -121,9 +139,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://danielwongkkk.github.io/bolg/post/wei-shi-me-xie-bo-ke/">
+                <a href="https://danielwongkkk.github.io/bolg/post/windows-docker-xian-shi-docker-filesharing-wen-ti/">
                   <h3 class="post-title">
-                    为什么写博客
+                    windows docker 显示 docker filesharing问题
                   </h3>
                 </a>
               </div>

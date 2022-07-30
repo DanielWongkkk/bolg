@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://danielwongkkk.github.io/bolg</id>
     <title>Gridea</title>
-    <updated>2022-07-29T15:50:54.188Z</updated>
+    <updated>2022-07-30T04:59:40.977Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://danielwongkkk.github.io/bolg"/>
     <link rel="self" href="https://danielwongkkk.github.io/bolg/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://danielwongkkk.github.io/bolg/images/avatar.png</logo>
     <icon>https://danielwongkkk.github.io/bolg/favicon.ico</icon>
     <rights>All rights reserved 2022, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[RNN 简述]]></title>
+        <id>https://danielwongkkk.github.io/bolg/post/rnn/</id>
+        <link href="https://danielwongkkk.github.io/bolg/post/rnn/">
+        </link>
+        <updated>2022-07-30T04:56:27.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="优势">优势</h4>
+<p>处理序列数据，这就非常适合处理文本、视频等信息</p>
+<p>卷积 CNN 的输入之间没什么联系，单个输入对应着单个输出</p>
+<p>但这并不足以应付更复杂的场景，比如视频信息，一句话，想要知道视频的含义或一句话的含义，单凭单个无连续的输入图片或单词，不足以推断出语义信息。需要输入之间的序列信息，上下文信息</p>
+<h4 id="常见的序列数据">常见的序列数据</h4>
+<ul>
+<li>文本</li>
+<li>音视频</li>
+<li>房价走势</li>
+</ul>
+<p>所以想要处理文本、音视频、房价预测这样的工作时，就需要用到 RNN</p>
+<h4 id="传统神经网络与-rnn-的对比">传统神经网络与 RNN 的对比</h4>
+<figure data-type="image" tabindex="1"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220722160259516.png" alt="image-20220722160259516" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220722160353054.png" alt="image-20220722160353054" loading="lazy"></figure>
+<p>这样做的好处就是，最有一层会包含之间所有输入的信息</p>
+<h4 id="rnn-的缺点">RNN 的缺点</h4>
+<p>最近的输入占的比重大，而之前的输入占的比重小</p>
+<figure data-type="image" tabindex="3"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220722160601327.png" alt="image-20220722160601327" loading="lazy"></figure>
+<h4 id="rnn-的优化算法">RNN 的优化算法</h4>
+<p>由于 RNN 的缺点，出现了一系列的基于 RNN 的优化算法</p>
+<h5 id="lstm">LSTM</h5>
+<p>长短时记忆网络，LSTM 会保留长序列中的重要信息，忽略不重要的信息</p>
+<h5 id="gru">GRU</h5>
+<p>在 LSTM 上优化得来，在训练大数据集时，可以节省时间</p>
+<p>参考链接</p>
+<blockquote>
+<p><a href="https://easyai.tech/ai-definition/rnn/">一文看懂循环神经网络 RNN（2种优化算法+5个实际应用） (easyai.tech)</a></p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[windows docker 显示 docker filesharing问题]]></title>
         <id>https://danielwongkkk.github.io/bolg/post/windows-docker-xian-shi-docker-filesharing-wen-ti/</id>
