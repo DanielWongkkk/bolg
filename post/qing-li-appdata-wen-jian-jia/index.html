@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>清理 AppData 文件夹 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://danielwongkkk.github.io/bolg/favicon.ico?v=1659344317787">
+<link rel="stylesheet" href="https://danielwongkkk.github.io/bolg/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="电脑每过一段时间空间就不够用，我之前的方法就是去重装系统，但这样的方法仅能维持一段时间
+今天我去重装系统时，发现AppData文件夹占用空间巨大，于是一个个点进去看看到底哪些文件比较占空间
+
+AppData主要是应用程序的配置文件和缓存文件..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://danielwongkkk.github.io/bolg">
+        <img src="https://danielwongkkk.github.io/bolg/images/avatar.png?v=1659344317787" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/bolg" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/bolg/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/bolg/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/bolg/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://danielwongkkk.github.io/bolg/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">清理 AppData 文件夹</h2>
+            <div class="post-date">2022-08-01</div>
+            
+            <div class="post-content" v-pre>
+              <p>电脑每过一段时间空间就不够用，我之前的方法就是去重装系统，但这样的方法仅能维持一段时间</p>
+<p>今天我去重装系统时，发现AppData文件夹占用空间巨大，于是一个个点进去看看到底哪些文件比较占空间</p>
+<figure data-type="image" tabindex="1"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220801155012476.png" alt="image-20220801155012476" loading="lazy"></figure>
+<p>AppData主要是应用程序的配置文件和缓存文件，即使我们将应用程序安装到 D 盘，仅仅是将程序安装文件的大小放到了 D 盘，而程序运行时所产生的文件，仍然会存放到 C 盘中，也就是 AppData 文件夹下</p>
+<p>所以就算将程序放到 D 盘，C 盘占用的空间也会随着程序的运行而越来越大</p>
+<p><strong>所以一劳永逸的解决方法就是扩大 C 盘的空间</strong>，要是暂时没法购买大硬盘来扩大 C 盘的话，就只能每隔一段时间来清理 C 盘的 AppData 文件夹了</p>
+<h3 id="寻找-appdata-占用空间大的文件">寻找 AppData 占用空间大的文件</h3>
+<p>AppData 下有如下文件夹：</p>
+<ul>
+<li>Local：应用程序运行时产生的文件</li>
+<li>LocalLow：共享数据存放文件</li>
+<li>Roaming：应用程序的配置信息，较为重要，不建议动该文件夹</li>
+</ul>
+<p>其中主要占空间的是 Local 文件夹，对于我来讲，主要占空间的是以下文件夹：</p>
+<h4 id="docker">Docker</h4>
+<figure data-type="image" tabindex="2"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220801162927807.png" alt="image-20220801162927807" loading="lazy"></figure>
+<p>这是安装 Docker desktop 后才有的文件夹，发现 Docker 会生成一个镜像文件，在这个镜像文件中来运行你所下载的 Docker 镜像，换句话说，这就是 Dokcer 下的文件系统，你在 windows 中划分了这块空间来给 Docker 运行</p>
+<h4 id="spotify">Spotify</h4>
+<figure data-type="image" tabindex="3"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220801163543452.png" alt="image-20220801163543452" loading="lazy"></figure>
+<p>主要存放 Spotify 的音乐缓存文件</p>
+<h4 id="temp">Temp</h4>
+<figure data-type="image" tabindex="4"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220801163617541.png" alt="image-20220801163617541" loading="lazy"></figure>
+<p>主要存放临时文件，可以删除，但应用程序的加载速度可能会受到一定影响</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://danielwongkkk.github.io/bolg/post/rnn/">
+                  <h3 class="post-title">
+                    RNN 简述
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

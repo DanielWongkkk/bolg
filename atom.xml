@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://danielwongkkk.github.io/bolg</id>
     <title>Gridea</title>
-    <updated>2022-07-30T04:59:40.977Z</updated>
+    <updated>2022-08-01T08:58:39.722Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://danielwongkkk.github.io/bolg"/>
     <link rel="self" href="https://danielwongkkk.github.io/bolg/atom.xml"/>
@@ -10,6 +10,37 @@
     <logo>https://danielwongkkk.github.io/bolg/images/avatar.png</logo>
     <icon>https://danielwongkkk.github.io/bolg/favicon.ico</icon>
     <rights>All rights reserved 2022, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[清理 AppData 文件夹]]></title>
+        <id>https://danielwongkkk.github.io/bolg/post/qing-li-appdata-wen-jian-jia/</id>
+        <link href="https://danielwongkkk.github.io/bolg/post/qing-li-appdata-wen-jian-jia/">
+        </link>
+        <updated>2022-08-01T08:57:33.000Z</updated>
+        <content type="html"><![CDATA[<p>电脑每过一段时间空间就不够用，我之前的方法就是去重装系统，但这样的方法仅能维持一段时间</p>
+<p>今天我去重装系统时，发现AppData文件夹占用空间巨大，于是一个个点进去看看到底哪些文件比较占空间</p>
+<figure data-type="image" tabindex="1"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220801155012476.png" alt="image-20220801155012476" loading="lazy"></figure>
+<p>AppData主要是应用程序的配置文件和缓存文件，即使我们将应用程序安装到 D 盘，仅仅是将程序安装文件的大小放到了 D 盘，而程序运行时所产生的文件，仍然会存放到 C 盘中，也就是 AppData 文件夹下</p>
+<p>所以就算将程序放到 D 盘，C 盘占用的空间也会随着程序的运行而越来越大</p>
+<p><strong>所以一劳永逸的解决方法就是扩大 C 盘的空间</strong>，要是暂时没法购买大硬盘来扩大 C 盘的话，就只能每隔一段时间来清理 C 盘的 AppData 文件夹了</p>
+<h3 id="寻找-appdata-占用空间大的文件">寻找 AppData 占用空间大的文件</h3>
+<p>AppData 下有如下文件夹：</p>
+<ul>
+<li>Local：应用程序运行时产生的文件</li>
+<li>LocalLow：共享数据存放文件</li>
+<li>Roaming：应用程序的配置信息，较为重要，不建议动该文件夹</li>
+</ul>
+<p>其中主要占空间的是 Local 文件夹，对于我来讲，主要占空间的是以下文件夹：</p>
+<h4 id="docker">Docker</h4>
+<figure data-type="image" tabindex="2"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220801162927807.png" alt="image-20220801162927807" loading="lazy"></figure>
+<p>这是安装 Docker desktop 后才有的文件夹，发现 Docker 会生成一个镜像文件，在这个镜像文件中来运行你所下载的 Docker 镜像，换句话说，这就是 Dokcer 下的文件系统，你在 windows 中划分了这块空间来给 Docker 运行</p>
+<h4 id="spotify">Spotify</h4>
+<figure data-type="image" tabindex="3"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220801163543452.png" alt="image-20220801163543452" loading="lazy"></figure>
+<p>主要存放 Spotify 的音乐缓存文件</p>
+<h4 id="temp">Temp</h4>
+<figure data-type="image" tabindex="4"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220801163617541.png" alt="image-20220801163617541" loading="lazy"></figure>
+<p>主要存放临时文件，可以删除，但应用程序的加载速度可能会受到一定影响</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RNN 简述]]></title>
         <id>https://danielwongkkk.github.io/bolg/post/rnn/</id>
@@ -19,7 +50,7 @@
         <content type="html"><![CDATA[<h4 id="优势">优势</h4>
 <p>处理序列数据，这就非常适合处理文本、视频等信息</p>
 <p>卷积 CNN 的输入之间没什么联系，单个输入对应着单个输出</p>
-<p>但这并不足以应付更复杂的场景，比如视频信息，一句话，想要知道视频的含义或一句话的含义，单凭单个无连续的输入图片或单词，不足以推断出语义信息。需要输入之间的序列信息，上下文信息</p>
+<p>卷积 CNN 的问题是不足以应付更复杂的场景，比如视频信息，一句话，想要知道视频的含义或一句话的含义，单凭单个无连续的输入图片或单词，不足以推断出语义信息。需要输入之间的序列信息，上下文信息</p>
 <h4 id="常见的序列数据">常见的序列数据</h4>
 <ul>
 <li>文本</li>
