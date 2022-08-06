@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://danielwongkkk.github.io/bolg</id>
     <title>Gridea</title>
-    <updated>2022-08-06T05:34:44.002Z</updated>
+    <updated>2022-08-06T05:38:18.499Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://danielwongkkk.github.io/bolg"/>
     <link rel="self" href="https://danielwongkkk.github.io/bolg/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://danielwongkkk.github.io/bolg/images/avatar.png</logo>
     <icon>https://danielwongkkk.github.io/bolg/favicon.ico</icon>
     <rights>All rights reserved 2022, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[搭建图床]]></title>
+        <id>https://danielwongkkk.github.io/bolg/XPNdVQUBe/</id>
+        <link href="https://danielwongkkk.github.io/bolg/XPNdVQUBe/">
+        </link>
+        <updated>2022-08-06T05:37:52.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p><a href="https://blog.csdn.net/Y2ANGAO/article/details/124201503">PicGo 安装及配置</a></p>
+<p><a href="https://blog.csdn.net/BISyus/article/details/119216082?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-119216082-blog-124609063.pc_relevant_paycolumn_v3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-119216082-blog-124609063.pc_relevant_paycolumn_v3&amp;utm_relevant_index=2">Typora配置阿里云图床详细教程（PicGo+阿里云OSS）</a></p>
+</blockquote>
+<p>使用 PicGO 来上传图片需要图床来存储，可以使用阿里云OSS、gitee、github 的图床服务</p>
+<p>其中阿里云OSS 对象存储来作为图床是 40g存储，9元一年，gitee 和 github 上建仓库来作为图床都是免费</p>
+<p>但 github 国内访问速度不理想，gitee 做图床不稳定，且存在大于1m的图片无法预览的情况</p>
+<p>综合下来，寻求稳定的话，还是选择阿里云一步到位</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[清理 AppData 文件夹]]></title>
         <id>https://danielwongkkk.github.io/bolg/qing-li-appdata-wen-jian-jia/</id>
