@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://danielwongkkk.github.io/bolg</id>
     <title>Gridea</title>
-    <updated>2022-08-06T05:06:52.733Z</updated>
+    <updated>2022-08-06T05:34:44.002Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://danielwongkkk.github.io/bolg"/>
     <link rel="self" href="https://danielwongkkk.github.io/bolg/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2022, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[清理 AppData 文件夹]]></title>
-        <id>https://danielwongkkk.github.io/bolg/post/qing-li-appdata-wen-jian-jia/</id>
-        <link href="https://danielwongkkk.github.io/bolg/post/qing-li-appdata-wen-jian-jia/">
+        <id>https://danielwongkkk.github.io/bolg/qing-li-appdata-wen-jian-jia/</id>
+        <link href="https://danielwongkkk.github.io/bolg/qing-li-appdata-wen-jian-jia/">
         </link>
         <updated>2022-08-01T08:57:33.000Z</updated>
         <content type="html"><![CDATA[<p>电脑每过一段时间空间就不够用，我之前的方法就是去重装系统，但这样的方法仅能维持一段时间</p>
@@ -43,8 +43,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[RNN 简述]]></title>
-        <id>https://danielwongkkk.github.io/bolg/post/rnn/</id>
-        <link href="https://danielwongkkk.github.io/bolg/post/rnn/">
+        <id>https://danielwongkkk.github.io/bolg/rnn/</id>
+        <link href="https://danielwongkkk.github.io/bolg/rnn/">
         </link>
         <updated>2022-07-30T04:56:27.000Z</updated>
         <content type="html"><![CDATA[<h4 id="优势">优势</h4>
@@ -79,22 +79,22 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[windows docker 显示 docker filesharing问题]]></title>
-        <id>https://danielwongkkk.github.io/bolg/post/windows-docker-xian-shi-docker-filesharing-wen-ti/</id>
-        <link href="https://danielwongkkk.github.io/bolg/post/windows-docker-xian-shi-docker-filesharing-wen-ti/">
+        <id>https://danielwongkkk.github.io/bolg/windows-docker-xian-shi-docker-filesharing-wen-ti/</id>
+        <link href="https://danielwongkkk.github.io/bolg/windows-docker-xian-shi-docker-filesharing-wen-ti/">
         </link>
         <updated>2022-07-29T15:39:19.000Z</updated>
         <content type="html"><![CDATA[<p>使用windows docker时，出于安全考虑windows会限制docker能访问的文件路径，所以需要指定哪些路径下的文件docker能够访问</p>
 <p>点击 share it docker便能访问到该路径下的文件</p>
-<figure data-type="image" tabindex="1"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220728100818374.png" alt="image-20220728100818374" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/blog_img/image-20220728100818374.png" alt="image-20220728100818374" loading="lazy"></figure>
 <p>但每次运行程序都会生成一个新文件，每次运行docker时能到都要点击 share it 么？</p>
 <p>为了解决这个问题，就需要在 docker 里面设置windows的挂载路径，这样 docker 就能访问到该路径下的所有文件，而不用每次点击 share it</p>
-<figure data-type="image" tabindex="2"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/image-20220728101316119.png" alt="image-20220728101316119" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://typoraimagekkk.oss-cn-guangzhou.aliyuncs.com/blog_img/image-20220728101316119.png" alt="image-20220728101316119" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[为什么写博客]]></title>
-        <id>https://danielwongkkk.github.io/bolg/post/wei-shi-me-xie-bo-ke/</id>
-        <link href="https://danielwongkkk.github.io/bolg/post/wei-shi-me-xie-bo-ke/">
+        <id>https://danielwongkkk.github.io/bolg/wei-shi-me-xie-bo-ke/</id>
+        <link href="https://danielwongkkk.github.io/bolg/wei-shi-me-xie-bo-ke/">
         </link>
         <updated>2022-07-25T12:01:00.000Z</updated>
         <content type="html"><![CDATA[<p>其实互联网时代，特别是作为程序员，遇到的大多数问题，早就有人遇到过了，并将其解决方法放到了网上</p>
@@ -105,8 +105,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://danielwongkkk.github.io/bolg/post/hello-gridea/</id>
-        <link href="https://danielwongkkk.github.io/bolg/post/hello-gridea/">
+        <id>https://danielwongkkk.github.io/bolg/hello-gridea/</id>
+        <link href="https://danielwongkkk.github.io/bolg/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
